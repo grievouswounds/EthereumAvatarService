@@ -48,36 +48,6 @@ contract EASCats is Context, ERC165, IERC721, IERC721Metadata {
     constructor(string memory name_, string memory symbol_) {
         _name = name_;
         _symbol = symbol_;
-        _uris.push(
-            "https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1615796153287-98eacf0abb13"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1579168765467-3b235f938439"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1615678815958-5910c6811c25"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1571988840298-3b5301d5109b"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1506755855567-92ff770e8d00"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1583083527882-4bee9aba2eea"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1586289883499-f11d28aaf52f"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55"
-        );
-        _uris.push(
-            "https://images.unsplash.com/photo-1606491048802-8342506d6471"
-        );
     }
 
     function mint() public {
@@ -160,7 +130,7 @@ contract EASCats is Context, ERC165, IERC721, IERC721Metadata {
      * by default, can be overridden in child contracts.
      */
     function _baseURI() internal view virtual returns (string memory) {
-        return "https://raw.githubusercontent.com/ocularzenith/cat-pictures/main/pictures/";
+        return "https://raw.githubusercontent.com/synchronizedspells/cat-pictures/main/pictures/";
     }
 
     /**
